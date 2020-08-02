@@ -12,17 +12,41 @@ Created with Spring Initializr (https://start.spring.io)
   - Spring Reactive Web
   - Spring Boot DevTools
 
-## Building
+## Testing
 
 ```
-./gradlew build bootJar
+./gradlew check
+```
+
+## Building
+
+Local build:
+
+```
+./gradlew bootJar
+```
+
+Docker build:
+
+```
+docker build -t starter-spring-boot .
 ```
 
 ## Running
 
+Local run:
+
 ```
 ./gradlew bootRun
 ```
+
+Docker run:
+
+```
+docker run -ti -p 8080:8080 starter-spring-boot
+```
+
+Open http://localhost:8080/swagger-ui/index.html
 
 ## Bumping Gradle Version
 
