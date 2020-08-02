@@ -10,6 +10,7 @@ Created with Spring Initializr (https://start.spring.io)
 * Dependencies
   - Lombok
   - Spring Reactive Web
+  - Spring Boot DevTools
 
 ## Building
 
