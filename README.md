@@ -3,10 +3,9 @@
 Created with Spring Initializr (https://start.spring.io)
 
 * Gradle Project
-* Languaje Java
+* Language Java 14
 * Spring Boot version 2.3.2
 * Packaging JAR
-* Java version 14
 * Dependencies
   - Lombok
   - Spring Reactive Web
