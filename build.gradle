@@ -16,10 +16,18 @@ configurations {
 
 repositories {
     mavenCentral()
+    jcenter()
+    maven { url 'https://oss.jfrog.org/simple/oss-snapshot-local/' }
+}
+
+bootJar {
+    archiveFileName = 'starter.jar'
+    launchScript()
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'io.springfox:springfox-boot-starter:3.0.0-SNAPSHOT'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
